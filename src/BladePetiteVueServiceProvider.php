@@ -1,12 +1,12 @@
 <?php
 
-namespace WallaceMaxters\PetiteBlade;
+namespace WallaceMaxters\BladePetiteVue;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use WallaceMaxters\PetiteBlade\View\Components\PetiteVue;
+use WallaceMaxters\BladePetiteVue\View\Components\PetiteVue;
 
-class PetiteBladeServiceProvider extends ServiceProvider
+class BladePetiteVueServiceProvider extends ServiceProvider
 {
     public function boot()
     {

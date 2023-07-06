@@ -1,0 +1,19 @@
+{
+    "name": "wallacemaxters/blade-petite-vue",
+    "description": "A small wrapper to usage petite-vue with Laravel Blade",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wallacemaxters\\BladePetiteVue\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wallacemaxters",
+            "email": "wallacemaxters@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

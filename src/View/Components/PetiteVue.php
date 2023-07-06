@@ -1,6 +1,6 @@
 <?php
 
-namespace WallaceMaxters\PetiteBlade\View\Components;
+namespace WallaceMaxters\BladePetiteVue\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
