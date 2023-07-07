@@ -6,7 +6,7 @@ Use petite-vue with Blade views in Laravel
 
 ### 
 
-```html
+```php
 <html>
 
 <head>
@@ -15,12 +15,29 @@ Use petite-vue with Blade views in Laravel
 </head>
 
 <body>
-  <x-petite-vue props="{name: 'Wallace Maxters'}">
+  <x-petite-vue :props="['name' => 'Wallace']">
       The current url is:
       <span x-text="$page.url" />
 
-      My name is @{{ name }}
+      My name is @{{ name }} 
 
+      This is another value @{{ anotherValue }}
+
+      <button @@click="changeName"></button>
+
+      <x-slot :script>
+        <script>
+        function (props) {
+          return {
+            ...props,
+            anotherValue: 5,
+            changeName() {
+              this.name = 'Maxters';
+            }
+          }
+        }
+        </script>
+      </x-slot>
   </x-petite-vue>
 </body>
 </html>
