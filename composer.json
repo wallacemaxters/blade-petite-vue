@@ -30,5 +30,13 @@
     "require": {
         "illuminate/support": "^9.0 || ^10.0",
         "illuminate/view": "^9.0 || ^10.0"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WallaceMaxters\\BladePetiteVue\\BladePetiteVueServiceProvider"
+            ]
+        }
     }
 }
